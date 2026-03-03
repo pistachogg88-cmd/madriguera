@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sección 3</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Serif', serif;
+            background-image: url('imagenes/fondodepantalla.JPEG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            background-color: #B39DDB;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .menu-boton {
+            background-color: #B39DDB;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+            .menu-boton:hover {
+                background-color: #9575CD;
+            }
+
+        .menu-desplegable {
+            display: none;
+            margin-top: 20px;
+        }
+
+            .menu-desplegable a {
+                display: block;
+                margin: 15px 0;
+            }
+
+            .menu-desplegable img {
+                width: 190px;
+                transition: 0.3s;
+            }
+
+                .menu-desplegable img:hover {
+                    transform: scale(1.05);
+                }
+
+        section {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .contenido img {
+            width: 500px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .descripcion {
+            max-width: 800px;
+            margin: 30px auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style-position: inside;
+            text-align: left;
+            max-width: 600px;
+            margin: 10px auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #B39DDB;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sección 3</h1>
+    </header>
+
+    <section>
+
+        <!-- BOTÓN MENÚ -->
+        <button class="menu-boton" onclick="mostrarMenu()">
+            ☰ Secciones
+        </button>
+
+        <!-- MENÚ DESPLEGABLE -->
+        <div class="menu-desplegable" id="menu">
+            <a href="index.html">
+                <img src="imagenes/botoninico.PNG">
+            </a>
+
+            <a href="seccion1.html">
+                <img src="imagenes/botonseccion1.PNG">
+            </a>
+
+            <a href="seccion2.html">
+                <img src="imagenes/botonseccion2.PNG">
+            </a>
+
+            <a href="seccion3.html">
+                <img src="imagenes/botonseccion3.PNG">
+            </a>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="contenido">
+
+            <h2 style="font-size:2.5em;">Alice: Madness Returns</h2>
+
+            <img src="imagenes/alice.PNG">
+
+            <p class="descripcion">
+                Alice: Madness Returns presenta un viaje perturbador a un mundo de fantasía roto,
+                donde cada escenario refleja dolor, trauma y locura.
+                La protagonista atraviesa paisajes surrealistas y violentos mientras enfrenta
+                recuerdos que la persiguen. Es una experiencia oscura, estilizada y
+                emocionalmente intensa que transforma un cuento clásico en una pesadilla inolvidable.
+            </p>
+
+            <h3>Datos</h3>
+
+            <ul>
+                <li>Género: Acción y plataformas</li>
+                <li>Estilo visual: Gótico surrealista</li>
+                <li>Enfoque: Distorsión mental y fantasía oscura</li>
+                <li>Mecánicas: Combate cuerpo a cuerpo</li>
+                <li>Diseño: Mundos inspirados en cuentos retorcidos</li>
+                <li>Progresión: Mejora de habilidades y armas</li>
+            </ul>
+
+            <h3 style="margin-top:40px;">Detalles</h3>
+
+            <ul>
+                <li>Lanzamiento: 2011</li>
+                <li>Estudio desarrollador: Spicy Horse</li>
+                <li>Director creativo: American McGee</li>
+                <li>Es secuela de American McGee’s Alice (2000)</li>
+                <li>Reimagina Alicia en el País de las Maravillas en versión oscura</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="imagenes/iconodeinsta.JPEG" width="60" style="margin:10px;">
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="imagenes/iconodex.JPEG" width="60" style="margin:10px;">
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="imagenes/iconofaceboock.JPEG" width="60" style="margin:10px;">
+        </a>
+    </footer>
+
+    <script>
+function mostrarMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sección 2</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Serif', serif;
+            background-image: url('imagenes/fondodepantalla.JPEG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            background-color: #B39DDB;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .menu-boton {
+            background-color: #B39DDB;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+            .menu-boton:hover {
+                background-color: #9575CD;
+            }
+
+        .menu-desplegable {
+            display: none;
+            margin-top: 20px;
+        }
+
+            .menu-desplegable a {
+                display: block;
+                margin: 15px 0;
+            }
+
+            .menu-desplegable img {
+                width: 190px;
+                transition: 0.3s;
+            }
+
+                .menu-desplegable img:hover {
+                    transform: scale(1.05);
+                }
+
+        section {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .contenido img {
+            width: 500px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .descripcion {
+            max-width: 800px;
+            margin: 30px auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style-position: inside;
+            text-align: left;
+            max-width: 600px;
+            margin: 10px auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #B39DDB;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sección 2</h1>
+    </header>
+
+    <section>
+
+        <!-- BOTÓN MENÚ -->
+        <button class="menu-boton" onclick="mostrarMenu()">
+            ☰ Secciones
+        </button>
+
+        <!-- MENÚ DESPLEGABLE -->
+        <div class="menu-desplegable" id="menu">
+            <a href="index.html">
+                <img src="imagenes/botoninico.PNG">
+            </a>
+
+            <a href="seccion1.html">
+                <img src="imagenes/botonseccion1.PNG">
+            </a>
+
+            <a href="seccion2.html">
+                <img src="imagenes/botonseccion2.PNG">
+            </a>
+
+            <a href="seccion3.html">
+                <img src="imagenes/botonseccion3.PNG">
+            </a>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="contenido">
+
+            <h2 style="font-size:2.5em;">Silent Hill 2</h2>
+
+            <img src="imagenes/silenthill.PNG">
+
+            <p class="descripcion">
+                Un descenso inquietante a la mente humana, donde el horror no solo está en los monstruos,
+                sino en la culpa y los recuerdos. La niebla, el silencio y los encuentros perturbadores
+                construyen una experiencia psicológica intensa. Cada paso revela emociones oscuras
+                y verdades dolorosas.
+            </p>
+
+            <h3>Datos</h3>
+
+            <ul>
+                <li>Género: Terror psicológico</li>
+                <li>Tipo de juego: Narrativo de exploración</li>
+                <li>Enfoque: Simbolismo y trauma emocional</li>
+                <li>Mecánicas: Exploración y combate limitado</li>
+                <li>Ambiente: Niebla y escenarios decadentes</li>
+                <li>Elemento clave: Interpretación psicológica de enemigos</li>
+            </ul>
+
+            <h3 style="margin-top:40px;">Detalles</h3>
+
+            <ul>
+                <li>Lanzamiento original: 2001</li>
+                <li>Estudio desarrollador: Team Silent (Konami)</li>
+                <li>Director: Masashi Tsuboyama</li>
+                <li>Considerado uno de los mejores juegos de terror psicológico</li>
+                <li>Música compuesta por Akira Yamaoka</li>
+                <li>Los monstruos representan emociones del protagonista</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="imagenes/iconodeinsta.JPEG" width="60" style="margin:10px;">
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="imagenes/iconodex.JPEG" width="60" style="margin:10px;">
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="imagenes/iconofaceboock.JPEG" width="60" style="margin:10px;">
+        </a>
+    </footer>
+
+    <script>
+function mostrarMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+    </script>
+
+</body>
+</html>
